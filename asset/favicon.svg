@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="22" fill="#2563eb"/>
+  <text x="50" y="50" dy="0.34em" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif" font-size="52"
+        font-weight="700" fill="#ffffff" letter-spacing="-2">LF</text>
+</svg>
