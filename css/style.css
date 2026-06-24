@@ -72,21 +72,34 @@ article > h1, article > h2 {
   border: 1px solid var(--border);
 }
 
+/* ---- Bio / intro links (jocelynshen.com style) --------------------- */
+/* dark-gray text with a soft gray underline, scoped to the intro copy   */
+.bio a, .bio a:visited {
+  color: #5b5b5b;
+  border-bottom: 1px solid #cfcfcf;
+  text-decoration: none;
+  transition: color .15s ease, border-color .15s ease;
+}
+.bio a:hover {
+  color: #242424;
+  border-bottom-color: #8e8e8e;
+  text-decoration: none;
+}
+
 /* ---- Inline company logos (experience) ----------------------------- */
-/* keep each company name + its logo on one line */
+/* logo BEFORE the name; keep the logo glued to the link, but let a long  */
+/* company name still wrap across lines (only the text gets the underline) */
 .org { white-space: nowrap; }
-/* the wrapping <span> breaks the template's "p > a" link color, so restore it here */
-.org a, .org a:visited { color: #3f8dc8; }
-.org a:hover { color: #2f74a8; text-decoration: underline; }
+.org a { white-space: normal; }
 /* experience line reads better left-aligned than justified with inline logos */
 p.exp { text-align: left; }
 .org-logo {
   display: inline-block;
   vertical-align: middle;
-  margin-left: .35em;
+  margin-right: .3em;
 }
-.org-logo.aws   { height: 1.15em; position: relative; top: .20em; }  /* smile dips below baseline */
-.org-logo.bosch { height: .8em; }
+.org-logo.aws   { height: 1.05em; position: relative; top: -.05em; }
+.org-logo.bosch { height: .85em;  position: relative; top: -.04em; }
 
 /* ---- Contact row --------------------------------------------------- */
 .contact a, .contact a:hover, .contact a:visited { color: var(--text-muted); }
