@@ -86,21 +86,6 @@ article > h1, article > h2 {
   text-decoration: none;
 }
 
-/* ---- Inline company logos (experience) ----------------------------- */
-/* logo BEFORE the name; keep the logo glued to the link, but let a long  */
-/* company name still wrap across lines (only the text gets the underline) */
-.org { white-space: nowrap; }
-.org a { white-space: normal; }
-/* experience line reads better left-aligned than justified with inline logos */
-p.exp { text-align: left; }
-.org-logo {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: .3em;
-}
-.org-logo.aws   { height: 1.05em; position: relative; top: -.05em; }
-.org-logo.bosch { height: .85em;  position: relative; top: -.04em; }
-
 /* ---- Contact row --------------------------------------------------- */
 .contact a, .contact a:hover, .contact a:visited { color: var(--text-muted); }
 .contact img {
